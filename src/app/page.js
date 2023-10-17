@@ -27,8 +27,8 @@ export default function page() {
       'f': 'ф',
       'G': 'Г',
       'g': 'г',
-      'H': 'Х',
-      'h': 'х',
+      'H': 'Ҳ',
+      'h': 'ҳ',
       'I': 'И',
       'i': 'и',
       'J': 'Ж',
@@ -45,8 +45,8 @@ export default function page() {
       'o': 'о',
       'P': 'П',
       'p': 'п',
-      'Q': 'К',
-      'q': 'к',
+      'Q': 'Қ',
+      'q': 'қ',
       'R': 'Р',
       'r': 'р',
       'S': 'С',
@@ -70,7 +70,15 @@ export default function page() {
       'Ch': 'Ч',
       'ch': 'ч',
       'Ye': 'Е',
-      'ye': 'е'
+      'ye': 'е',
+      'Yu': 'Ю',
+      'yu': 'ю',
+      'Ya': 'Я',
+      'ya': 'я',
+      "O'": 'Ў',
+      "o'": 'ў',
+      "G'": 'Ғ',
+      "g'": 'ғ'
     }
 
     return text.split('').map((char) => converter[char] || char).join('') + ' ';
@@ -90,7 +98,7 @@ export default function page() {
       'д': 'd',
       'Е': 'E',
       'е': 'e',
-      'Ё': 'YO',
+      'Ё': 'Yo',
       'ё': 'yo',
       'Ж': 'J',
       'ж': 'j',
@@ -140,11 +148,20 @@ export default function page() {
       'ь': "'",
       'Э': 'E',
       'э': 'e',
-      'Ю': 'YU',
+      'Ю': 'Yu',
       'ю': 'yu',
-      'Я': 'YA',
+      'Я': 'Ya',
       'я': 'ya',
+      'Ғ': "G'",
       'f': "g'",
+      'Ў': "O'",
+      'ў': "o'",
+      'Ғ' : "G'",
+      'ғ' : "g'"
+      'Қ' : 'Q',
+      'қ': 'q',
+      'Ҳ': 'H',
+      'ҳ': 'h'
     }
 
     return text.split('').map((char) => converter[char] || char).join('') + ' ';
