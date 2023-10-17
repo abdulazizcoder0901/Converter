@@ -68,7 +68,9 @@ export default function page() {
       'Sh': 'Ш',
       'sh': 'ш',
       'Ch': 'Ч',
-      'ch': 'ч'
+      'ch': 'ч',
+      'Ye': 'Е',
+      'ye': 'е'
     }
 
     return text.split('').map((char) => converter[char] || char).join('') + ' ';
